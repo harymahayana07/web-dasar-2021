@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="POST">
+
+    <label for="nim">NIM</label>
+    <input type="text" name="nim" id="nim" placeholder="masukan nim anda">
+    <br>
+
+    <label for="nama">Nama</label>
+    <input type="text" name="nama" id="nama">
+    <br>
+
+    <label for="jk">Jenis Kelamin</label>
+    <input type="radio" name="jk" id="jk" value="L">Laki - Laki
+    <input type="radio" name="jk" id="jk" value="P">Perempuan
+    <br>
+
+    <label for="Jurusan">Jurusan</label>
+    <select name="Jurusan" id="Jurusan" required>
+        <option value="">Pilih Jurusan</option>
+        <option value="D3SI">D3SI</option>
+        <option selected value="S1RPL">S1 RPL</option>
+
+    </select> <br>
+<label for="catatan">Catatan</label>
+<textarea required name="catatan" id="catatan" cols="50" rows="3"></textarea>
+<input type="submit" name="submit" value="Simpan Data">
+<input type="reset" value="Batal">
+</form>
+</body>
+</html>
