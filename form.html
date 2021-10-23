@@ -7,32 +7,54 @@
     <title>Document</title>
 </head>
 <body>
+  
+   <fieldset>
+    <h2>Form Biodata</h2>
     <form action="" method="POST">
 
-    <label for="nim">NIM</label>
+    <label for="nim">NIM :</label>
     <input type="text" name="nim" id="nim" placeholder="masukan nim anda">
-    <br>
+<br><br>
 
-    <label for="nama">Nama</label>
+    <label for="nama">NAMA  :</label>
     <input type="text" name="nama" id="nama">
-    <br>
-
-    <label for="jk">Jenis Kelamin</label>
+<br><br>
+    <label for="jk">JENIS KELAMIN  :</label>
     <input type="radio" name="jk" id="jk" value="L">Laki - Laki
     <input type="radio" name="jk" id="jk" value="P">Perempuan
-    <br>
-
-    <label for="Jurusan">Jurusan</label>
+<br><br>
+    <label for="Jurusan">JURUSAN  :</label>
     <select name="Jurusan" id="Jurusan" required>
-        <option value="">Pilih Jurusan</option>
+        <option value="">Pilih ...</option>
         <option value="D3SI">D3SI</option>
-        <option selected value="S1RPL">S1 RPL</option>
-
-    </select> <br>
-<label for="catatan">Catatan</label>
-<textarea required name="catatan" id="catatan" cols="50" rows="3"></textarea>
-<input type="submit" name="submit" value="Simpan Data">
-<input type="reset" value="Batal">
+        <option value="S1RPL">S1 RPL</option>        
+    </select> 
+<br><br>
+    <label for="hobby">HOBBY  :</label>
+    <input type="checkbox" name="chkhobby[]" id="komputer" value="komputer"checked> Komputer
+    <input type="checkbox" name="chkhobby[]" id="musik" value="musik"> Musik
+    <input type="checkbox" name="chkhobby[]" id="olahraga" value="olahraga"> Olahraga
+    <input type="checkbox" name="chkhobby[]" id="travelling" value="travelling"> Travelling
+<br><br>
+    <label  for="catatan">CATATAN  :</label>
+    <textarea  required name="txtcatatan" cols="50" rows="5" > </textarea>  
+<br><br>  
+    <label for="Foto">FOTO  :</label>
+    <input type="file" name="foto" accept="image/*">
+<br><br>
+    <label for="email">EMAIL  :</label>
+    <input type="text" name="email" id="email">
+<br><br>
+    <label for="sandi">SANDI LOGIN  :</label>
+    <input type="password" name="password" id="password">
+<br><br>
+    <label for="ulangsandi">ULANGI SANDI LOGIN  :</label>
+    <input type="password" name="password2" id="password2">
+<br><br>
+    <input type="submit" name="btnSimpan" value="Simpan">
+    <input type="reset" name="btnBatal" value="Batal">
+    <button type="button" onclick="alert('Pastikan Seluruh data telah di isi!')">Peringatan</button>
+</fieldset>
 </form>
 </body>
 </html>
