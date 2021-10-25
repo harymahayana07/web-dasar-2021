@@ -4,57 +4,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Form Biodata</title>
 </head>
 <body>
-  
-   <fieldset>
-    <h2>Form Biodata</h2>
-    <form action="" method="POST">
+    <fieldset>
+    <form action="" method="get">
+      
+       <table>
+<tr>
+       <th></th>
+       <th></th>
+       <th>Form Biodata</th>
 
-    <label for="nim">NIM :</label>
-    <input type="text" name="nim" id="nim" placeholder="masukan nim anda">
-<br><br>
-
-    <label for="nama">NAMA  :</label>
-    <input type="text" name="nama" id="nama">
-<br><br>
-    <label for="jk">JENIS KELAMIN  :</label>
-    <input type="radio" name="jk" id="jk" value="L">Laki - Laki
-    <input type="radio" name="jk" id="jk" value="P">Perempuan
-<br><br>
-    <label for="Jurusan">JURUSAN  :</label>
-    <select name="Jurusan" id="Jurusan" required>
+</tr>
+<tr>
+    <td><label for="nim">NIM</label></td>
+    <td>:</td>
+    <td><input required type="text" name="nim" id="nim" placeholder="masukan nim anda" size="15" maxlength="20"></td>
+</tr>
+<tr>
+    <td><label for="nama">NAMA  :</label></td>
+    <td>:</td>
+    <td><input required type="text" name="nama" id="nama" placeholder="masukan nama anda" size="30" maxlength="50"></td>
+</tr>
+<tr>
+    <td><label for="jk">JENIS KELAMIN</label></td>
+    <td>:</td>
+    <td><input type="radio" name="jk" id="jk" value="L">Laki - Laki
+    <input type="radio" name="jk" id="jk" value="P">Perempuan</td>
+</tr>
+<tr>
+   <td> <label for="Jurusan">JURUSAN</label></td>
+   <td>:</td>
+   <td> <select name="Jurusan" id="Jurusan" required>
         <option value="">Pilih ...</option>
         <option value="D3SI">D3SI</option>
         <option value="S1RPL">S1 RPL</option>        
-    </select> 
-<br><br>
-    <label for="hobby">HOBBY  :</label>
-    <input type="checkbox" name="chkhobby[]" id="komputer" value="komputer"checked> Komputer
-    <input type="checkbox" name="chkhobby[]" id="musik" value="musik"> Musik
-    <input type="checkbox" name="chkhobby[]" id="olahraga" value="olahraga"> Olahraga
-    <input type="checkbox" name="chkhobby[]" id="travelling" value="travelling"> Travelling
-<br><br>
-    <label  for="catatan">CATATAN  :</label>
-    <textarea  required name="txtcatatan" cols="50" rows="5" > </textarea>  
-<br><br>  
-    <label for="Foto">FOTO  :</label>
-    <input type="file" name="foto" accept="image/*">
-<br><br>
-    <label for="email">EMAIL  :</label>
-    <input type="text" name="email" id="email">
-<br><br>
-    <label for="sandi">SANDI LOGIN  :</label>
-    <input type="password" name="password" id="password">
-<br><br>
-    <label for="ulangsandi">ULANGI SANDI LOGIN  :</label>
-    <input type="password" name="password2" id="password2">
-<br><br>
-    <input type="submit" name="btnSimpan" value="Simpan">
+    </select> </td>
+</tr>
+<tr>
+   <td> <label for="hobby">HOBBY</label></td>
+   <td>:</td>
+   <td> <input type="checkbox" name="chkhobby[]" id="hobby1" value="komputer"> Komputer
+    <input type="checkbox" name="chkhobby[]" id="hobby2" value="musik"> Musik
+    <input type="checkbox" name="chkhobby[]" id="hobby3" value="olahraga"> Olahraga
+    <input type="checkbox" name="chkhobby[]" id="hobby4" value="travelling"> Travelling</td>
+</tr>
+<tr>
+   <td><label  for="catatan">CATATAN</label></td>
+   <td>:</td>
+   <td><textarea  required name="txtcatatan" cols="50" rows="5" > </textarea></td>  
+</tr>
+<tr> 
+   <td><label for="Foto">FOTO</label></td>
+   <td>:</td>
+   <td><input type="file" name="foto" accept="image/*"></td>
+</tr> 
+<tr>
+   <td><label for="email">EMAIL</label></td>
+   <td>:</td>
+   <td><input type="text" name="email" id="email"></td>
+</tr>
+<tr>
+    <td><label for="sandi">SANDI LOGIN</label></td>
+    <td>:</td>
+    <td><input type="password" name="password" id="password"></td>
+</tr>
+<tr>
+   <td><label for="ulangsandi">ULANGI SANDI LOGIN</label></td>
+   <td>:</td>
+   <td><input type="password" name="password2" id="password2"></td>
+</tr>
+<tr>
+    <td></td>
+    <td></td>
+   <td><input type="submit" name="btnSimpan" value="Simpan">
     <input type="reset" name="btnBatal" value="Batal">
-    <button type="button" onclick="alert('Pastikan Seluruh data telah di isi!')">Peringatan</button>
-</fieldset>
+    <button type="button" onclick="alert('Pastikan Seluruh data telah di isi!')">Peringatan</button></td>
+</tr>
+</table>
 </form>
+</fieldset>
 </body>
 </html>
