@@ -1,0 +1,12 @@
+h2{
+    color: rgb(15, 1, 1);
+}
+.merah{
+    color: rgb(20, 157, 220);
+}
+.miring{
+    font-style: italic;
+}
+.garis_bawah{
+    text-decoration: underline;
+}
