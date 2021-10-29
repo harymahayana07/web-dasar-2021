@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <title>Form Biodata</title>
 </head>
 <body>
-    <fieldset>
+    <div class="container">
     <form action="" method="get">
       
        <table>
@@ -17,31 +17,40 @@
        <th>Form Biodata</th>
 
 </tr>
+<div class="mb-3">
 <tr>
     <td><label for="nim">NIM</label></td>
     <td>:</td>
-    <td><input required type="text" name="nim" id="nim" placeholder="masukan nim anda" size="15" maxlength="20"></td>
+    <td><input class="form-control" required type="text" name="nim" id="nim" placeholder="Masukan Nim Anda" size="15" maxlength="20"></td>
 </tr>
+</div>
+<div class="mb-3">
 <tr>
-    <td><label for="nama">NAMA  :</label></td>
+    <td><label for="nama">NAMA  </label></td>
     <td>:</td>
-    <td><input required type="text" name="nama" id="nama" placeholder="masukan nama anda" size="30" maxlength="50"></td>
+    <td><input class="form-control" required type="text" name="nama" id="nama" placeholder="Masukan Nama Anda" size="30" maxlength="50"></td>
 </tr>
+</div>
+<div class="mb-3">
 <tr>
     <td><label for="jk">JENIS KELAMIN</label></td>
     <td>:</td>
     <td><input type="radio" name="jk" id="jk" value="L">Laki - Laki
     <input type="radio" name="jk" id="jk" value="P">Perempuan</td>
 </tr>
+</div>
+<div class="mb-3">
 <tr>
    <td> <label for="Jurusan">JURUSAN</label></td>
    <td>:</td>
-   <td> <select name="Jurusan" id="Jurusan" required>
+   <td> <select class="form-control" name="Jurusan" id="Jurusan" required>
         <option value="">Pilih ...</option>
         <option value="D3SI">D3SI</option>
         <option value="S1RPL">S1 RPL</option>        
     </select> </td>
 </tr>
+</div>
+<div>
 <tr>
    <td> <label for="hobby">HOBBY</label></td>
    <td>:</td>
@@ -50,40 +59,55 @@
     <input type="checkbox" name="chkhobby[]" id="hobby3" value="olahraga"> Olahraga
     <input type="checkbox" name="chkhobby[]" id="hobby4" value="travelling"> Travelling</td>
 </tr>
+</div>
+<div class="mb-3">
 <tr>
    <td><label  for="catatan">CATATAN</label></td>
    <td>:</td>
-   <td><textarea  required name="txtcatatan" cols="50" rows="5" > </textarea></td>  
+   <td><textarea class="form-control" required name="txtcatatan" cols="50" rows="5" > </textarea></td>  
 </tr>
+</div>
+<div class="mb-3">
 <tr> 
    <td><label for="Foto">FOTO</label></td>
    <td>:</td>
-   <td><input type="file" name="foto" accept="image/*"></td>
+   <td><input class="form-control" type="file" name="foto" accept="image/*"></td>
 </tr> 
+</div>
+<div class="mb-3">
 <tr>
    <td><label for="email">EMAIL</label></td>
    <td>:</td>
-   <td><input type="text" name="email" id="email"></td>
+   <td><input class="form-control" type="text" name="email" id="email"></td>
 </tr>
+</div>
+<div class="mb-3">
 <tr>
     <td><label for="sandi">SANDI LOGIN</label></td>
     <td>:</td>
-    <td><input type="password" name="password" id="password"></td>
+    <td><input class="form-control" type="password" name="password" id="password"></td>
 </tr>
+</div>
+<div class="mb-3">
 <tr>
    <td><label for="ulangsandi">ULANGI SANDI LOGIN</label></td>
    <td>:</td>
-   <td><input type="password" name="password2" id="password2"></td>
+   <td><input class="form-control" type="password" name="password2" id="password2"></td>
 </tr>
+</div>
+<div>
 <tr>
     <td></td>
     <td></td>
-   <td><input type="submit" name="btnSimpan" value="Simpan">
-    <input type="reset" name="btnBatal" value="Batal">
-    <button type="button" onclick="alert('Pastikan Seluruh data telah di isi!')">Peringatan</button></td>
+   <td><input type="submit" class="btn btn-primary" name="btnSimpan" value="Simpan">
+    <input type="reset" class="btn btn-primary" name="btnBatal" value="Batal">
+    <button type="button" class="btn btn-warning" onclick="alert('Pastikan Seluruh data telah di isi!')">Peringatan</button></td>
 </tr>
+</div>
 </table>
 </form>
-</fieldset>
+</div>
+<script src="bootstrap/css/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FORM PERTEMUAN 3</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+</head>
+<body>
+    <div class="container">
+    <form table action="" method="post">
+        <h2 >Form Biodata</h2>
+        
+        <div class="mb-3">
+        <label for="nim">NIM</label>
+        <input required class="form-control" type="text" name="nim" id="nim" placeholder="Masukan Nim Anda">
+        </div>
+
+        <div class="mb-3">
+        <label for="nama">NAMA</label>
+        <input required class="form-control" type="text" name="nama" id="nama" placeholder="Masukan Nama Anda ">
+        </div>
+
+        <div class="mb-3">
+        <label for="jk">Jenis Kelamin :</label>
+        <input type="radio" name="jk" id="jk" value="L">Laki - Laki
+        <input type="radio" name="jk" id="jk" value="P">Perempuan
+        </div>
+
+        <div class="mb-3">
+        <label for="jurusan">Jurusan</label>
+        <select class="form-control" name="jurusan" id="jurusan">
+            <option value="">Pilih Jurusan</option>
+            <option value="S1RPL">S1 RPL</option>
+            <option selected value="S1ILKOM">S1 ILKOM </option>
+        </select>
+        </div>
+
+        <div class="mb-3">
+        <label for="catatan">Catatan</label>
+        <textarea class="form-control" name="catatan" id="catatan" cols="50" rows="3"></textarea>
+        </div>
+       <input type="submit" class="btn btn-primary" name="submit" value="Simpan Data">
+       <input type="reset" value="Batal" class="btn btn-warning">
+       
+    </form>
+    </div>
+     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
